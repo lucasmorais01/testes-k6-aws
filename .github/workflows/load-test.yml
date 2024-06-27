@@ -1,5 +1,7 @@
 name: k6 load test
 on: [push]
+permissions:
+  contents: write
 jobs:
   build: k6 load test
   runs-on: ubuntu-latest
