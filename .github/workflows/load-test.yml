@@ -14,3 +14,11 @@ jobs:
         uses: grafana/k6-action@v0.2.0
         with: 
           filename: k6-aws/exemploaws.js
+
+      - run: ls & mkdir report & mc index.html report    
+
+      - name: step 4 - upload artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: relatorio de testes de performance
+          path: report
