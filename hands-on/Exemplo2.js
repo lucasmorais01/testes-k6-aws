@@ -1,3 +1,10 @@
+//TESTE DE CARGA 
+// PUBLIC API: Exemplo2
+
+//Criterios:
+// Performance test - ramp up 10 VU em 10s | CARGA: 10 VU por 10s | LIMITES: requisição com sucesso > 95%
+// Tempo requisição p(90) < 200
+
 import http from "k6/http";
 import { check, sleep } from "k6";
 import { SharedArray } from "k6/data";
